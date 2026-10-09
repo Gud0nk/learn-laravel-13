@@ -49,3 +49,9 @@ copy .env.example .env
 ```bash
 php artisan key:generate
 ```
+
+Выполните миграцию
+
+```bash
+php artisan migrate --seed
+```
