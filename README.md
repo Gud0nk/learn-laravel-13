@@ -32,3 +32,20 @@ RewriteEngine on                // включает модуль mod_rewrite в 
 RewriteRule ^(.*)$ public/$1 [L]   // правило, которое берет абсолютно любой запрошенный url и незаметно для пользователя перенаправляет в папку public
 ```
 
+## Установка проекта из репозитория
+Открой консоль домашней директории сайтов.
+Выполните клонирование репозитория и скачайте недостающиеся зависимости
+```bash
+git clone https://github.com/Gud0nk/learn-laravel-13.git
+composer install
+```
+
+Скопируем файл **.env** из файла **.env.example**
+```bash
+copy .env.example .env
+```
+
+Сгенерируем ключ шифрования
+```bash
+php artisan key:generate
+```
